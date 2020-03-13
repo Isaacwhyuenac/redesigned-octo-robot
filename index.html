@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <link rel=¨stylesheet¨ type=¨text/css¨ href=¨main.css¨>
+  <h1>Minesweeper</h1>
+  <p>Enter what size of your game board would like</p>
+  <label for="height">Height</label>
+  <input id="height" type="text" name="height"></input>
+  <label for="width">Width</label>
+  <input id="width" type="text" name="width"></input>
+  <label for="numMines">Number of mines</label>
+  <input id="numMines" type="text" name="numMines"></input>
+  <br/>
+  <input type="submit" onclick="createBoard()"></input>
+
+  <div id="board"></div>
+</body>
+
+<script src="./board.js"></script>
+<script src="./flag.js"></script>
+<script src="./game.js"></script>
+</html>

@@ -1,0 +1,9 @@
+function checkIfCellIsFlagged() {
+
+}
+
+function checkIfBombIsMinedInBoard() {
+
+}
+
+
