@@ -1,5 +1,11 @@
+/* .boardTable {
+  color: black;
+  width: 1000px;
+  height: 1000px;
+} */
+
 .squareBoardTable_cell{
   border-color: black;
-  width: 16px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
 }

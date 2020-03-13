@@ -12,7 +12,7 @@ function createBoard() {
 
   draw2DBoard(rows, cols)
 
-  insertMinesOnInit(rows, cols, numMines)
+  // insertMinesOnInit(rows, cols, numMines)
 
   return board
 }
@@ -32,7 +32,7 @@ function draw2DBoard(rows, cols) {
   var boardHtml ="<table id=\"squareBoardTable\" class=\"boardTable\" unselectable=\"on\">"
 
   for (var i = 0; i < cols; i++) {
-    boardHtml += `<tr id=\"squareBoardTable_col${i}\">`
+    boardHtml += `<tr class=\"squareBoardTable_col\ "id=\"squareBoardTable_col${i}\">`
 
     for (var j =0; j < rows; j++) {
       boardHtml += `<td class=\"squareBoardTable_cell\" id=\"squareBoardTable_row${j}\" onclick=\"onCellClick(${i}, ${j})\"/></td>`
@@ -41,7 +41,6 @@ function draw2DBoard(rows, cols) {
     boardHtml += "</tr>"
   }
 
-console.log(`draw2DBoard`,boardHtml )
   document.getElementById(`board`).innerHTML = boardHtml
 }
 
@@ -55,7 +54,7 @@ function insertMinesOnInit(rows, cols, numMines) {
 
     if (boardWithMine[posY][posX] !== true) {
       boardWithMine[posY][posX] = true
-      minesPlanted++
+      ++minesPlanted
     }
   }
 }
